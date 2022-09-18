@@ -1,0 +1,59 @@
+{% extends 'nbaWebsite/base.html' %}
+
+{% block content %}
+
+    {% for comparison in comparisons %}
+<style> img{border: 5px solid #555;}</style>
+        <div class="post block">
+
+            <div class="pull-right">
+
+            <ol>
+  <li>{{comparison.playerNameOne}} </li>
+  <li>{{comparison.playerNameTwo}} </li>
+  <li>{{comparison.yearOptionOne}}</li>
+                <li>{{comparison.yearOptionTwo}}</li>
+
+</ol>
+
+
+
+    {% endfor %}
+                <li>{{filteredPlayerOne}} </li>
+                <br><br>
+                <li>{{filteredPlayerTwo}} </li>
+                <br><br>
+                <br><br>
+                <h5 style="color:black;">< <b> GP1 </b> {{gp1}}</h5>
+                <br><br>
+                <h5 style="color:black;">< <b> GP2 </b> {{gp2}}</h5>
+                <br><br>
+                <h5 style="color:black;">< <b> FGP1 </b> {{fgp1}}</h5>
+                <br><br>
+                <h5 style="color:black;">< <b> FGP2 </b> {{fgp2}}</h5>
+                <br><br>
+                <h5 style="color:black;">< <b> FG3P1 </b> {{fgp3p1}}</h5>
+                <br><br>
+                <h5 style="color:black;">< <b> FG3P2 </b> {{fg3p2}}</h5>
+                <br><br>
+                <h5 style="color:black;">< <b> FTP1 </b> {{ftp1}}</h5>
+                <br><br>
+                <h5 style="color:black;">< <b> FTP2 </b> {{ftp2}}</h5>
+                <br><br>
+                <h5 style="color:black;">< <b> REB1 </b> {{reb1}}</h5>
+                <br><br>
+                <h5 style="color:black;">< <b> REB2 </b> {{reb2}}</h5>
+                <br><br>
+                <h5 style="color:black;">< <b> AST1 </b> {{ast1}}</h5>
+                <br><br>
+                <h5 style="color:black;">< <b> AST2 </b> {{ast2}}</h5>
+                <br><br>
+                <h5 style="color:black;">< <b> PTS1 </b> {{pts1}}</h5>
+                <br><br>
+                <h5 style="color:black;">< <b> PTS2 </b> {{pts2}}</h5>
+                <br><br>
+                <h5 style="color:black;">< <b> ID1 </b> {{playerOneID}}</h5>
+                <br><br>
+                <h5 style="color:black;">< <b> ID2 </b> {{playerTwoID}}</h5>
+
+{% endblock %}

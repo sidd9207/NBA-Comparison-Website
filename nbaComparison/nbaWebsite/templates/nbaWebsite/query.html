@@ -1,0 +1,13 @@
+{% extends 'nbaWebsite/base.html' %}
+
+{% block content %}
+<h1>Query Form</h1>
+<hr>
+
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit">
+</form>
+
+{% endblock %}

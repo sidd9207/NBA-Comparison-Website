@@ -1,0 +1,23 @@
+{% extends "nbaWebsite/base.html" %}
+{% load static %}
+
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+<h1 style="color:blue;"><P ALIGN=Center ><font size="+2"><U> <b>Home</b> </U></font> </P></h1>
+
+
+<h5 style="color:black;"><P ALIGN=Right > <b> Hello World 2022 Project-Shubham Welling & Siddharth Prabakar </b>  </P></h5>
+<p>
+
+
+    This website allows you to compare two NBA players and use those insights to make the best fantasy team you can for yourself. </p>
+
+<div class="text-center"><a href="{% url 'query' %}" class="btn btn-primary">Continue</a></div>
+<br>
+<ul></ul>
+<br><br><br><br><br>
+
+{% endblock %}
